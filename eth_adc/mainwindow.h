@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include <QtNetwork/QUdpSocket>
+#include <QFile>
 
 namespace Ui {
 class MainWindow;
@@ -23,6 +24,8 @@ private slots:
 private:
     Ui::MainWindow *ui;
     QUdpSocket *udpSocket;
+    bool stateProc;
+    QFile datafile;
 
 
 };
